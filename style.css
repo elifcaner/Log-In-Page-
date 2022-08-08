@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;500&family=Raleway:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Kaisei Opti', serif;
+    font-family: 'Raleway', sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background-image: url(back.jpg);
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.title{
+    font-size: 25px;
+    font-weight: bolder;
+    color: rgb(224, 188, 188);
+    margin: 35px ;   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+#mainTitle{
+        font-size: 40px;
+        font-weight: 600px;
+        color: rgb(224, 188, 188);
+        margin: 35px ;   
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin:1% auto;
+		margin-right: auto; margin-left: auto; width: 21%; 
+		padding-top: 200px;
+        padding-left: 580px;
+}
+
+.form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    background: rgba(241, 232, 92, 0.842);
+    box-shadow: rgb(55, 84, 172);
+    border-radius: 35px; 
+    margin: 6% auto;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#pass_error{
+    font-size: 5px;
+    background-color: rgb(63, 136, 219);
+    display: none;
+}
+
+#message{
+    font-size: 10px;
+}
+
+
+.button-box{
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: rgb(20, 20, 126);
+    border-radius: 35px;
+}
+
+.toggle-btn{
+    position: relative;
+    padding: 10px 30px;
+    border: none;
+    background: transparent;
+    outline: none; /* dısındaki cizgiler*/
+    font-size: 13px;
+    font-weight: bolder;
+    cursor: pointer; /* fare ustune gelince degisiyo*/
+}
+#btn{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 110px;
+    height: 100%;
+    background: linear-gradient(to right, #9f9fb9, #29bb83);
+    border-radius: 35px;
+    transition: .5s;
+}
+.button-box button:nth-child(2){
+    color: #fff;
+}
+
+/*hide arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.social-icons{
+    display: flex; /* yan yana*/
+    justify-content: center; /* ortalama*/
+    align-items: center;
+}
+
+.social-icons lottie-player{
+    width: 40px;
+    margin: 0px 12px;
+    cursor: pointer;
+}
+
+.input-group{
+    position: absolute;
+    top: 180px;
+    width: 280px;
+    transition: .5s;
+    color: rgb(34, 39, 36);
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    margin: 5px 0;
+    background: transparent;
+    border-bottom: 1px solid rgba(83, 150, 7, 0.705);
+    outline: none; /* kenarlıklar gitsin*/   
+    font-size: 14px;   
+}
+
+/*.input-field input:is(:focus,   :valid){
+        border-bottom-color: rgb(226, 27, 27);
+}*/
+
+.form-box .checkbox-text{
+   /* background-color: lightgreen;*/
+    font-size: 12px;
+    color: white;
+}
+
+.checkbox-content input{
+    accent-color: green;
+    margin: 8px 8px 8px 8px;
+}
+
+.submit-btn{
+    display: block;
+    width: 85%;
+    padding: 10px;
+    border: none;
+    background: green;
+    border-radius: 35px;
+    cursor: pointer;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    margin: auto;
+    outline: none;
+}
+
+.contact-btn{
+    display: block;
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background: rgb(212, 120, 120);
+    border-radius: 35px;
+    cursor: pointer;
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    margin: auto;
+    outline: none;
+}
+
+
+.reset-btn{
+    display: block;
+    width: 30%;
+    padding: 2px;
+    border: none;
+    background: rgb(201, 138, 44);
+    border-radius: 35px;
+    cursor: pointer;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 10px;
+    outline: none;
+    display: inline-block;
+}
+
+.input-group a{
+    display: inline-block;
+    text-decoration: none;
+    color: rgb(74, 32, 187);
+    margin: 30px 10px 30px 0px;
+    font-size: 12px;    
+
+}
+
+#Login{
+    left: 50px;
+}
+
+#Register{
+    left: 450px;
+}

@@ -1,0 +1,105 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Log in Page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            
+        <span class="title" id="mainTitle">CRS KIDS  
+
+        <div class="form-box">
+
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type = "button" class="toggle-btn" onclick= "login()" >Log In</button> <! –– log in butonu ––> 
+                <button type = "button" class="toggle-btn" onclick="register()" >Register</button> <! –– Register butonu ––> 
+            </div> 
+            <div class="social-icons">
+                <! –– intagram ikonu ––> 
+                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_3s913D.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
+                <! –– twitter ikonu ––> 
+                <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_OFBfKg.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
+                <! –– fb ikonu ––> 
+                <lottie-player src="https://assets10.lottiefiles.com/private_files/lf30_7xnua9vp.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
+                <! –– youtube ikonu ––> 
+                <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_emod42y4.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
+            
+            </div>
+
+            <! –– inputs ––> 
+            <form id="Login" class="input-group" method="post",  name="form" onsubmit="return verifyPassword()" action="newPage.html" >
+                
+                <input type="number" class="input-field" name="number" placeholder="Enter User Name" required> <! ––girilmesi zorunlu –> 
+                
+                <input type="password" id="password" class="input-field" name="password" placeholder="Enter Password" required> <! ––girilmesi zorunlu –>
+                <span id = "message" style="color:red"> </span> <br><br>  
+
+            
+                <div class="checkbox-text">
+                    <div class="checkbox-content">
+                        <input type="checkbox" value="lsRememberMe" id="rememberMe"> 
+                        <label for="rememberMe">Remember me</label>
+                    </div>
+                </div>
+                
+                <button type="reset" class= "reset-btn" value="Forgot Page" onclick="resetPass()"> Forgot Password</button> 
+
+                <button type="submit" class="submit-btn" onclick="lsRememberMe()"> Log In</button> 
+
+            </form>
+            <form id="Register" class="input-group" onsubmit="return successfullyReg()" action="registeredPage.html">
+                
+                <input type="number" class="input-field" placeholder="Enter User Name" required> <! ––girilmesi zorunlu –>
+                <input type="email" class="input-field" placeholder="Enter Email" required> <! ––girilmesi zorunlu –>
+                <input type="password" id="password" class="input-field" name="password" placeholder="Enter Password" required> <! ––girilmesi zorunlu –>
+
+                <div class="checkbox-text">
+                    <div class="checkbox-content">
+                        <input type="checkbox" value="register" id="terms"> 
+                        <label for="terms">By registering you accept the Terms and Conditions</label>
+                    </div>
+                </div>
+
+                <button onclick="verifyPassword()" type="submit" class="submit-btn"> Register </button> 
+            </form>
+
+            </div>
+
+            <div class="footer">
+                <button type="button" class="contact-btn" value="Contact Page" onclick="contactMe()"> Contact </button> 
+
+        </div>
+
+    </span>
+
+        <script>
+            var x = document.getElementById("Login");
+            var z = document.getElementById("Register");
+            var y = document.getElementById("btn");
+
+            function register(){
+                x.style.left="-400px";
+                z.style.left="50px";
+                y.style.left="110px";
+            }
+
+            function login(){
+                x.style.left="50px";
+                z.style.left="450px";
+                y.style.left="0px";
+            }
+        </script>
+
+        <script src="main.js"></script>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> <! –– instagram ikonu ––> 
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><! –– twitter ikonu ––> 
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script> <! –– fb ikonu ––> 
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><! –– youtube ikonu ––> 
+
+    </body>
+    </html>

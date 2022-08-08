@@ -1,0 +1,14 @@
+registeredPage: is the page when the user successfully registered.
+newPage: is the page when the user successfully logged in.
+resetPass: is the page which will be used to send an email.
+contact.html: is the page which will be used to see contact information.
+
+These pages are implemented just for showing the layout and whether the functions 
+work successfully or not. No design is done for these pages.
+
+index.html: is the main Log in/Register page.
+
+Note: Register Page's (verify function method) does not work. However, in Log in 
+page, it works. The reason is due to design of Register and Log in screens are on
+the same Page. I could change it (design them on seperate pages), but I do not 
+want.
